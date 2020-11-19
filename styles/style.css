@@ -1,0 +1,94 @@
+.ant-layout-content .site-layout-background .ant-layout-sider-children {
+  background-color: #00152983;
+}
+.space {
+  height: 32px;
+  margin: 16px;
+}
+.title {
+  display: block;
+}
+.site-layout-sub-header-background {
+  background: #001529;
+}
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #87d068;
+}
+Link {
+  color: #87d068 !important;
+}
+.ant-input :focus {
+  border-color: #87d068 !important;
+}
+.anticon svg {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+Col {
+  margin: 10px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pay {
+  margin: 2px;
+  width: 40px;
+  height: 30px;
+}
+.site-card-border-less-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 500px;
+  height: 700px;
+  display: flex;
+}
+.ant-card {
+  background: #ffffffdb;
+  border-radius: 16px;
+}
+.card-postproject {
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.active {
+  font-size: bold;
+}
+
+.footer {
+  background-color: #eeeeee;
+  padding: 20px 0px;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer img {
+  width: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .pay {
+    width: 30px;
+    height: 20px;
+  }
+  col {
+    margin: 5px;
+  }
+  .card-postproject {
+    margin-left: 20px;
+  }
+}
