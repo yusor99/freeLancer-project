@@ -1,8 +1,10 @@
 import NavBar from "../components/navbar";
 import Card from "../components/card";
+import { getData } from "../api";
+import { useEffect, useState } from "react";
 import { Row, Col } from "antd";
 import SkyCom from "./../components/sky";
-
+import { getCategories } from "../api";
 
 const Home = () => {
   const data = [

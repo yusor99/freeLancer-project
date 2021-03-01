@@ -1,9 +1,8 @@
 import { Card, Avatar, Row, Col, Button } from "antd";
 import NavBar from "../components/navbar";
-import Card1 from "../components/card";
-import { getCategories } from "../api";
+
 import Link from "next/link";
-import { useEffect, useState } from "react";
+
 import {
   ApartmentOutlined,
   FieldTimeOutlined,
@@ -14,22 +13,6 @@ import SkyCom from "./../components/sky";
 const { Meta } = Card;
 
 const AddService = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    getCategories((err, result) => {
-      if (err) throw err;
-      console.log(result.data.data[0]);
-      if (!result.status) {
-        Object.keys(result.errMsg).forEach((key) => {
-          message.error(result.errMsg[key]);
-        });
-      } else {
-        setData(result.data.data[0]);
-        console.log(result.data.data[0]);
-      }
-    });
-  }, []);
   return (
     <>
       <SkyCom>
@@ -72,13 +55,6 @@ const AddService = () => {
               </Col>
             </Row>
           </Card>
-          <Row gutter={[30, 30]} style={{ marginTop: 30 }}>
-            {data.map((category) => (
-              <Col md={8} sm={12} xs={24} key={category.id}>
-                <Card1 item={category} />
-              </Col>
-            ))}
-          </Row>
         </NavBar>
       </SkyCom>
     </>

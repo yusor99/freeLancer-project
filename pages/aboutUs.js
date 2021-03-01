@@ -1,4 +1,4 @@
-import NavBar from "../components/navbar"
+import NavBar from "../components/navbar";
 import { Row, Col, Card } from "antd";
 import SkyCom from "./../components/sky";
 
@@ -20,8 +20,7 @@ const AboutUs = () => {
               business owners and people who want a services to be done online
               i.e design, translation, programming etc. in Iraq. With the
               provision of online payment methods such as Zain Cash, Launched in
-              November 2020, frontend by <b>Yusor Ahmad</b> and backend by{" "}
-              <b>Omar Osama</b>
+              November 2020, by <b>Yusor Ahmad</b>
             </div>
 
             <Row

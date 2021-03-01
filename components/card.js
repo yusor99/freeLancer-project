@@ -2,14 +2,24 @@ import Link from "next/link";
 
 const Card = ({ item }) => {
   return (
-    <Link href={`services/${item.id}`} style={{ cursor: "pointer" }}>
-      <div className="blog-item">
-        <div className="img">
-          <img src="/img/free.png" style={{ width: 200, height: 300 }} />
-        </div>
-        <h4>{item.title}</h4>
+    <div className="blog-item">
+      <div className="img">
+        <img
+          src={item.img}
+          style={{
+            width: 200,
+            height: 200,
+            paddingTop: 10,
+            paddingBottom: 10,
+          }}
+        />
       </div>
-    </Link>
+      <Link href="/">
+        <h4 style={{ color: "#001529", fontSize: 22, cursor: "pointer" }}>
+          {item.title}
+        </h4>
+      </Link>
+    </div>
   );
 };
 
